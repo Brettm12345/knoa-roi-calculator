@@ -1,4 +1,4 @@
-import React, {ChangeEventHandler, FC, ReactNode, useState} from 'react'
+import React, {FC, ReactNode} from 'react'
 import {pipe} from 'fp-ts/function'
 import {
   Benefit,
@@ -19,6 +19,7 @@ import {
   YearsHero,
 } from './App.styles'
 import {SCHEDULE_A_DEMO_LINK} from './constants'
+import {useNumber} from './hooks'
 import {
   annualBenefits,
   itStaffProductivityBenefits,
@@ -28,19 +29,6 @@ import {
   toCommaSeparated,
 } from './util'
 
-type UseNumber = (
-  init: number
-) => [number, ChangeEventHandler<HTMLInputElement>]
-const useNumber: UseNumber = init => {
-  const [value, setValue] = useState(init)
-  return [
-    value,
-    ({target: {value}}) => {
-      if (value === '') setValue(0)
-      else setValue(parseInt(value))
-    },
-  ]
-}
 const App: FC = () => {
   const [employees, setEmployees] = useNumber(1000)
   const [years, setYears] = useNumber(3)
