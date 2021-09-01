@@ -149,6 +149,15 @@ export const MoneySaved = styled.span`
 `
 
 export const Benefit = styled.li`
+  display: flex;
+  flex-direction: row;
+  & svg {
+    min-width: 100px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 40px;
+  }
   list-style: none;
   & em {
     color: ${red};

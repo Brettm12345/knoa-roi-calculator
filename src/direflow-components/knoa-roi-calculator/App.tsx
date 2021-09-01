@@ -18,6 +18,7 @@ import {
   textDark,
   YearsHero,
 } from './App.styles'
+import {Icon} from '@iconify/react'
 import {SCHEDULE_A_DEMO_LINK} from './constants'
 import {useNumber} from './hooks'
 import {
@@ -96,6 +97,8 @@ const App: FC = () => {
                 </em>{' '}
                 in business productivity gains
               </span>,
+              // @ts-ignore
+              <Icon icon="bx:bx-cog" />,
             ],
             [
               'It Staff',
@@ -111,6 +114,8 @@ const App: FC = () => {
                 </em>{' '}
                 for your company
               </span>,
+              // @ts-ignore
+              <Icon icon="carbon:person" />,
             ],
             [
               'Mitigated Risks',
@@ -122,10 +127,15 @@ const App: FC = () => {
                 </em>{' '}
                 a year in a company of your size
               </span>,
+              // @ts-ignore
+              <Icon icon="bi:clipboard-check" />,
             ],
             // @ts-ignore
-          ].map(([key, element]: [string, ReactNode]) => (
-            <Benefit key={key}>{element}</Benefit>
+          ].map(([key, element, icon]: [string, ReactNode, ReactNode]) => (
+            <Benefit key={key}>
+              {icon}
+              {element}
+            </Benefit>
           ))}
         </BenefitList>
         <BenefitHelperText>
