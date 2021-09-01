@@ -41,7 +41,7 @@ const useNumber: UseNumber = init => {
     },
   ]
 }
-const App: FC = props => {
+const App: FC = () => {
   const [employees, setEmployees] = useNumber(1000)
   const [years, setYears] = useNumber(3)
   return (
