@@ -35,10 +35,7 @@ const useNumber: UseNumber = init => {
   const [value, setValue] = useState(init)
   return [
     value,
-    event => {
-      const {
-        target: {value},
-      } = event
+    ({target: {value}}) => {
       if (value === '') setValue(0)
       else setValue(parseInt(value))
     },
