@@ -28,10 +28,10 @@ import {
   toCommaSeparated,
 } from './util'
 
-type UseNullableNumber = (
+type UseNumber = (
   init: number
 ) => [number, ChangeEventHandler<HTMLInputElement>]
-const useNumber: UseNullableNumber = init => {
+const useNumber: UseNumber = init => {
   const [value, setValue] = useState(init)
   return [
     value,
