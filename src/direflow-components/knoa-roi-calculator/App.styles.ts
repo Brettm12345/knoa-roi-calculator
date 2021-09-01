@@ -26,6 +26,7 @@ export const MainHero = styled.section`
   text-align: center;
   align-items: center;
 `
+
 const title = css`
   font-size: ${pxToRem(60)};
   font-weight: bold;
@@ -42,6 +43,7 @@ const title = css`
     font-size: ${pxToRem(118)};
   }
 `
+
 const highlight = css`
   font-size: ${pxToRem(80)};
   line-height: 100px;
@@ -133,6 +135,7 @@ export const MoneySavedWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
 `
+
 export const MoneySaved = styled.span`
   ${highlight}
   max-width: 100%;
