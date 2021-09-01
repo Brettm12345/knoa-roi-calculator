@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot as expected 1`] = `
+<div
+  className="sc-bdfBQB yYlSG"
+>
+  <section
+    className="sc-gsTEea kXbZWJ"
+  >
+    <h1
+      className="sc-dlfnuX deMBHQ"
+    >
+      Knoa ROI Calculator
+    </h1>
+    <h2
+      className="sc-hKgJUU gmtDuB"
+    >
+      Input the number of employees to calculate the business impact Knoa UEM can have on your organization.
+    </h2>
+    <div
+      className="sc-gKseQn bpCsor"
+    >
+      <h2
+        className="sc-hKgJUU gmtDuB"
+      >
+        If you have
+         
+        <input
+          className="sc-bqyKOL lbvyBV"
+          color="white"
+          onChange={[Function]}
+          value={1000}
+          width={4}
+        />
+        employees, Knoa could save your company
+      </h2>
+      <div
+        className="sc-iBPTik fBQYEZ"
+      >
+        <span
+          className="sc-fubCzh bNZiFO"
+        >
+          $0.4M
+        </span>
+        <span
+          className="sc-dQoVA bblmrx"
+        >
+          In year one
+        </span>
+      </div>
+    </div>
+  </section>
+  <section
+    className="sc-jSgvzq kdWlxR"
+  >
+    <span
+      className="sc-dQoVA bblmrx"
+    >
+      or
+    </span>
+    <span
+      className="sc-fubCzh bNZiFO"
+    >
+      $1.3M
+    </span>
+    <span
+      className="sc-dQoVA bblmrx"
+    >
+      over
+    </span>
+    <input
+      className="sc-bqyKOL dIgZAc"
+      color="#3C3C3C"
+      onChange={[Function]}
+      value={3}
+      width={1}
+    />
+    <span
+      className="sc-dQoVA bblmrx"
+    >
+      Years
+    </span>
+  </section>
+  <section
+    className="sc-gsTEea kXbZWJ"
+  >
+    <h1
+      className="sc-dlfnuX deMBHQ"
+    >
+      Annual Business Benefits
+    </h1>
+    <h2
+      className="sc-hKgJUU gmtDuB"
+    >
+      (per 
+      1000
+       
+      employees
+      )
+    </h2>
+  </section>
+  <section
+    className="sc-crrszt bKolqx"
+  >
+    <ul
+      className="sc-jrAFXE jLaOnN"
+    >
+      <li
+        className="sc-pGacB lgUPiH"
+      >
+        <span>
+          In just 
+          3
+           
+          years
+           of using Knoa UEM you will see
+           
+          <em>
+            $
+            928,500
+          </em>
+           
+          in business productivity gains
+        </span>
+      </li>
+      <li
+        className="sc-pGacB lgUPiH"
+      >
+        <span>
+          IT Staff Productivity Benefits and Infrastructure cost reductions will also present some nice savings, around
+           
+          <em>
+            $
+            228,300
+          </em>
+           
+          for your company
+        </span>
+      </li>
+      <li
+        className="sc-pGacB lgUPiH"
+      >
+        <span>
+          Lastly, mitigated risks and employee productivity benefits are expected to generate savings of
+           
+          <em>
+            $
+            165,300
+          </em>
+           
+          a year in a company of your size
+        </span>
+      </li>
+    </ul>
+    <span
+      className="sc-iqHYmW hYELHO"
+    >
+      Metrics based on assumptions from the IDC ROI model
+    </span>
+  </section>
+  <section
+    className="sc-gsTEea kXbZWJ"
+  >
+    <h1
+      className="sc-dlfnuX deMBHQ"
+    >
+      Let's get started!
+    </h1>
+    <h2
+      className="sc-hKgJUU gmtDuB"
+    >
+      Learn how Knoa User Experience Management can significantly improve the utilization and profitability of your enterprise software investment.
+    </h2>
+    <a
+      className="sc-kEjbQP ikuxqg"
+      href="https://knoa.wpengine.com/schedule-a-demo/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Schedule a Demo
+    </a>
+  </section>
+</div>
+`;
