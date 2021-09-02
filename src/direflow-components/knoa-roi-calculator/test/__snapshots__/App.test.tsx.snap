@@ -106,7 +106,7 @@ exports[`matches snapshot as expected 1`] = `
       className="sc-jrAFXE bEMFEl"
     >
       <li
-        className="sc-pGacB jalUxg"
+        className="sc-pGacB jGInUR"
       >
         <svg
           fill="currentColor"
@@ -145,7 +145,7 @@ exports[`matches snapshot as expected 1`] = `
         </span>
       </li>
       <li
-        className="sc-pGacB jalUxg"
+        className="sc-pGacB jGInUR"
       >
         <svg
           fill="currentColor"
@@ -183,7 +183,7 @@ exports[`matches snapshot as expected 1`] = `
         </span>
       </li>
       <li
-        className="sc-pGacB jalUxg"
+        className="sc-pGacB jGInUR"
       >
         <svg
           fill="none"

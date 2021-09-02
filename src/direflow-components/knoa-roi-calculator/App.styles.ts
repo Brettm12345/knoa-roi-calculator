@@ -162,7 +162,7 @@ export const Benefit = styled.li`
   list-style: none;
   & em {
     color: ${red};
-    font-weight: 900;
+    font-weight: 800;
     font-style: normal;
   }
   padding-top: 16px;
