@@ -8,7 +8,7 @@ exports[`matches snapshot as expected 1`] = `
     className="sc-gsTEea kXbZWJ"
   >
     <h1
-      className="sc-dlfnuX iQQFhF"
+      className="sc-dlfnuX NBkgg"
     >
       Knoa ROI Calculator
     </h1>
@@ -89,7 +89,7 @@ exports[`matches snapshot as expected 1`] = `
     className="sc-gsTEea kXbZWJ"
   >
     <h1
-      className="sc-dlfnuX iQQFhF"
+      className="sc-dlfnuX NBkgg"
     >
       Annual Business Benefits
     </h1>
@@ -232,7 +232,7 @@ exports[`matches snapshot as expected 1`] = `
     className="sc-gsTEea kXbZWJ"
   >
     <h1
-      className="sc-dlfnuX iQQFhF"
+      className="sc-dlfnuX NBkgg"
     >
       Let's get started!
     </h1>
@@ -242,7 +242,7 @@ exports[`matches snapshot as expected 1`] = `
       Learn how Knoa User Experience Management can significantly improve the utilization and profitability of your enterprise software investment.
     </h2>
     <a
-      className="sc-iqHYmW fNwNUA"
+      className="sc-iqHYmW eIoyaW"
       href="https://knoa.wpengine.com/schedule-a-demo/"
       rel="noopener noreferrer"
       target="_blank"

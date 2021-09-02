@@ -68,8 +68,8 @@ const highlight = css`
 `
 export const MainTitle = styled.h1`
   ${title}
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 35px;
+  margin-top: 30px;
 `
 
 export const SecondaryTitle = styled.h2`
@@ -218,10 +218,10 @@ export const Button = styled.a`
   text-decoration: none;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-size: ${pxToRem(30)};
-  font-weight: 500;
+  font-weight: bold;
   outline: none;
   border: none;
   border-radius: 30px;
@@ -235,15 +235,12 @@ export const Button = styled.a`
   @media ${device.mobileL} {
     font-size: ${pxToRem(40)};
   }
-  @media ${device.tablet} {
-    font-size: ${pxToRem(50)};
-  }
   @media ${device.laptopL} {
-    padding-left: 48px;
-    padding-right: 48px;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    font-size: ${pxToRem(70)};
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: ${pxToRem(50)};
   }
 `
 
