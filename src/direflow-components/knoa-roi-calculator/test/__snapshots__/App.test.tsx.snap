@@ -43,7 +43,7 @@ exports[`matches snapshot as expected 1`] = `
           $0.4M
         </span>
         <span
-          className="sc-dQoVA bblmrx"
+          className="sc-dQoVA eivzMK"
         >
           In year one
         </span>
@@ -54,7 +54,7 @@ exports[`matches snapshot as expected 1`] = `
     className="sc-jSgvzq kdWlxR"
   >
     <span
-      className="sc-dQoVA bblmrx"
+      className="sc-dQoVA eivzMK"
     >
       or
     </span>
@@ -64,7 +64,7 @@ exports[`matches snapshot as expected 1`] = `
       $1.3M
     </span>
     <span
-      className="sc-dQoVA bblmrx"
+      className="sc-dQoVA eivzMK"
     >
       over
     </span>
@@ -76,7 +76,7 @@ exports[`matches snapshot as expected 1`] = `
       width={1}
     />
     <span
-      className="sc-dQoVA bblmrx"
+      className="sc-dQoVA eivzMK"
     >
       Years
     </span>

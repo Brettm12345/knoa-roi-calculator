@@ -255,12 +255,6 @@ export const BenefitSection = styled.section`
 export const MoneySavedSecondaryText = styled.span`
   font-weight: normal;
   font-size: ${pxToRem(40)};
-  @media ${device.mobileL} {
-    font-size: ${pxToRem(40)};
-  }
-  @media ${device.laptop} {
-    font-size: ${pxToRem(40)};
-  }
   @media ${device.desktop} {
     font-size: ${pxToRem(50)};
   }
