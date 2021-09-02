@@ -87,14 +87,13 @@ const App: FC = () => {
             <BiCog />
             <span>
               In just {years} {years === 1 ? 'year' : 'years'} of using Knoa UEM
-              you will see{' '}
+              you, will see{' '}
               <em>
                 $
                 {pipe(productivityBenefits(years, employees), toCommaSeparated)}
               </em>{' '}
               in business productivity gains
             </span>
-            ,
           </Benefit>
           <Benefit>
             <BiUser />

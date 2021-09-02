@@ -194,7 +194,7 @@ export const Benefit = styled.li`
 export const BenefitList = styled.ul`
   list-style-type: none;
   display: flex;
-  max-width: 900px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;

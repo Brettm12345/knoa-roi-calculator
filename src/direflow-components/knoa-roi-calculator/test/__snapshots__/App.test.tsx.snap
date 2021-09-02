@@ -103,7 +103,7 @@ exports[`matches snapshot as expected 1`] = `
     className="sc-crrszt bKolqx"
   >
     <ul
-      className="sc-jrAFXE jLaOnN"
+      className="sc-jrAFXE bEMFEl"
     >
       <li
         className="sc-pGacB jalUxg"
@@ -134,7 +134,7 @@ exports[`matches snapshot as expected 1`] = `
           3
            
           years
-           of using Knoa UEM you will see
+           of using Knoa UEM you, will see
            
           <em>
             $
@@ -143,7 +143,6 @@ exports[`matches snapshot as expected 1`] = `
            
           in business productivity gains
         </span>
-        ,
       </li>
       <li
         className="sc-pGacB jalUxg"
