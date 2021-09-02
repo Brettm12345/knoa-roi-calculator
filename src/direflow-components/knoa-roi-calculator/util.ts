@@ -33,7 +33,9 @@ export const annualBenefits: BenefitCalculation = (years, employees) =>
 export const formatNumber = (money: number): string =>
   `$${
     money < 100000
-      ? `${(money / 1000).toFixed(0)}K`
+      ? money < 1000
+        ? money.toFixed(0)
+        : `${(money / 1000).toFixed(0)}K`
       : `${(money / 1000000).toFixed(1)}M`
   }`
 

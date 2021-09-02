@@ -22,6 +22,13 @@ it('Handles numbers under 100000', () => {
   expect(result).toBe(expected)
 })
 
+it('Handles numbers under 1000', () => {
+  const input = 900
+  const expected = '$900'
+  const result = formatNumber(input)
+  expect(result).toBe(expected)
+})
+
 it('Separates Numbers With Commas', () => {
   const input = 100000
   const expected = '100,000'
