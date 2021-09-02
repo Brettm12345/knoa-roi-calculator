@@ -1,5 +1,6 @@
 import React, {FC, ReactNode} from 'react'
 import {pipe} from 'fp-ts/function'
+import {Icon} from '@iconify/react'
 import {
   Benefit,
   BenefitHelperText,
@@ -18,7 +19,6 @@ import {
   textDark,
   YearsHero,
 } from './App.styles'
-import {Icon} from '@iconify/react'
 import {SCHEDULE_A_DEMO_LINK} from './constants'
 import {useNumber} from './hooks'
 import {
