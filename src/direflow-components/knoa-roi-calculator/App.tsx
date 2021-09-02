@@ -3,6 +3,7 @@ import {pipe} from 'fp-ts/function'
 import {BiCog, BiUser} from 'react-icons/bi'
 import {HiOutlineClipboardCheck} from 'react-icons/hi'
 import {
+  Bar,
   Benefit,
   BenefitHelperText,
   BenefitList,
@@ -42,6 +43,7 @@ const App: FC = () => {
           Input the number of employees to calculate the business impact Knoa
           UEM can have on your organization.
         </SecondaryTitle>
+        <Bar />
         <MainHeroSecondaryWrapper>
           <SecondaryTitle>
             If you have{' '}
@@ -51,6 +53,7 @@ const App: FC = () => {
               value={employees}
               width={employees.toString().length}
             />
+            <br />
             employees, Knoa could save your company
           </SecondaryTitle>
           <MoneySavedWrapper>

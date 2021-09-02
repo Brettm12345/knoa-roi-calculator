@@ -30,16 +30,17 @@ export const MainHero = styled.section`
 const title = css`
   font-size: ${pxToRem(60)};
   font-weight: bold;
-  @media ${device.mobileL} {
-    font-size: ${pxToRem(60)};
-  }
+  line-height: 80px;
   @media ${device.tablet} {
+    line-height: 100px;
     font-size: ${pxToRem(80)};
   }
   @media ${device.laptop} {
+    line-height: 120px;
     font-size: ${pxToRem(98)};
   }
   @media ${device.desktop} {
+    line-height: 140px;
     font-size: ${pxToRem(118)};
   }
 `
@@ -57,7 +58,7 @@ const highlight = css`
     font-size: ${pxToRem(100)};
   }
   @media ${device.laptop} {
-    line-height: 130px;
+    line-height: 100px;
     font-size: ${pxToRem(110)};
   }
   @media ${device.desktop} {
@@ -67,7 +68,7 @@ const highlight = css`
 `
 export const MainTitle = styled.h1`
   ${title}
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   margin-top: 20px;
 `
 
@@ -133,6 +134,8 @@ export const MoneySavedWrapper = styled.div`
   text-align: center;
   display: flex;
   flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
   justify-content: center;
 `
 
@@ -148,6 +151,13 @@ export const MoneySaved = styled.span`
   font-weight: bold;
 `
 
+export const Bar = styled.div`
+  background: linear-gradient(to right, ${yellow} 40%, white 60%);
+  height: 14px;
+  width: 80%;
+  margin-top: 24px;
+  margin-bottom: 60px;
+`
 export const Benefit = styled.li`
   display: flex;
   flex-direction: row;
@@ -172,6 +182,7 @@ export const Benefit = styled.li`
   max-width: 90%;
   color: ${textDark};
   font-size: ${pxToRem(24)};
+  line-height: 1.5em;
   @media ${device.mobileL} {
     & svg {
       display: block;
