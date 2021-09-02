@@ -106,8 +106,9 @@ exports[`matches snapshot as expected 1`] = `
       className="sc-jrAFXE jLaOnN"
     >
       <li
-        className="sc-pGacB lgUPiH"
+        className="sc-pGacB bwOFPp"
       >
+        <span />
         <span>
           In just 
           3
@@ -124,8 +125,9 @@ exports[`matches snapshot as expected 1`] = `
         </span>
       </li>
       <li
-        className="sc-pGacB lgUPiH"
+        className="sc-pGacB bwOFPp"
       >
+        <span />
         <span>
           IT Staff Productivity Benefits and Infrastructure cost reductions will also present some nice savings, around
            
@@ -138,8 +140,9 @@ exports[`matches snapshot as expected 1`] = `
         </span>
       </li>
       <li
-        className="sc-pGacB lgUPiH"
+        className="sc-pGacB bwOFPp"
       >
+        <span />
         <span>
           Lastly, mitigated risks and employee productivity benefits are expected to generate savings of
            
