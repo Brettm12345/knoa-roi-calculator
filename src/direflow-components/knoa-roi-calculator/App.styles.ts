@@ -154,6 +154,7 @@ export const Benefit = styled.li`
   & svg {
     min-width: 100px;
     height: auto;
+    display: none;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 40px;
@@ -171,6 +172,11 @@ export const Benefit = styled.li`
   max-width: 90%;
   color: ${textDark};
   font-size: ${pxToRem(24)};
+  @media ${device.mobileL} {
+    & svg {
+      display: block;
+    }
+  }
   @media ${device.mobileL} {
     font-size: ${pxToRem(30)};
   }
