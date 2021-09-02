@@ -1,7 +1,5 @@
 import React, {FC} from 'react'
 import {pipe} from 'fp-ts/function'
-import {BiCog, BiUser} from 'react-icons/bi'
-import {HiOutlineClipboardCheck} from 'react-icons/hi'
 import {
   Bar,
   Benefit,
@@ -30,6 +28,7 @@ import {
   riskMitigation,
   formatNumber,
   toCommaSeparated,
+  icon,
 } from './util'
 
 const App: FC = () => {
@@ -87,7 +86,7 @@ const App: FC = () => {
       <BenefitSection>
         <BenefitList>
           <Benefit>
-            <BiCog />
+            <img alt="Gear Icon" src={icon('gear')} />
             <span>
               In just {years} {years === 1 ? 'year' : 'years'} of using Knoa UEM
               you, will see{' '}
@@ -99,7 +98,7 @@ const App: FC = () => {
             </span>
           </Benefit>
           <Benefit>
-            <BiUser />
+            <img alt="Staff" src={icon('staff')} />
             <span>
               IT Staff Productivity Benefits and Infrastructure cost reductions
               will also present some nice savings, around{' '}
@@ -114,7 +113,7 @@ const App: FC = () => {
             </span>
           </Benefit>
           <Benefit>
-            <HiOutlineClipboardCheck />
+            <img alt="Risk" src={icon('risk')} />
             <span>
               Lastly, mitigated risks and employee productivity benefits are
               expected to generate savings of{' '}

@@ -161,8 +161,8 @@ export const Bar = styled.div`
 export const Benefit = styled.li`
   display: flex;
   flex-direction: row;
-  & svg {
-    min-width: 100px;
+  & img {
+    min-width: 150px;
     height: auto;
     display: none;
     margin-top: auto;
@@ -184,7 +184,7 @@ export const Benefit = styled.li`
   font-size: ${pxToRem(24)};
   line-height: 1.5em;
   @media ${device.mobileL} {
-    & svg {
+    & img {
       display: block;
     }
   }

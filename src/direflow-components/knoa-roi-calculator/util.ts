@@ -41,3 +41,6 @@ export const formatNumber = (money: number): string =>
 
 export const toCommaSeparated = (int: number): string =>
   int.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+
+export const icon = (name: string): string =>
+  `https://raw.githubusercontent.com/Brettm12345/knoa-roi-calculator/master/assets/${name}.png`
