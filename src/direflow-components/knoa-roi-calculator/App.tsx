@@ -1,6 +1,7 @@
-import React, {FC, ReactNode} from 'react'
+import React, {FC} from 'react'
 import {pipe} from 'fp-ts/function'
-import {Icon} from '@iconify/react'
+import {BiCog, BiUser} from 'react-icons/bi'
+import {HiOutlineClipboardCheck} from 'react-icons/hi'
 import {
   Benefit,
   BenefitHelperText,
@@ -82,61 +83,45 @@ const App: FC = () => {
       </MainHero>
       <BenefitSection>
         <BenefitList>
-          {[
-            [
-              'Productivity Benefits',
-              <span>
-                In just {years} {years === 1 ? 'year' : 'years'} of using Knoa
-                UEM you will see{' '}
-                <em>
-                  $
-                  {pipe(
-                    productivityBenefits(years, employees),
-                    toCommaSeparated
-                  )}
-                </em>{' '}
-                in business productivity gains
-              </span>,
-              // @ts-ignore
-              <Icon icon="bx:bx-cog" />,
-            ],
-            [
-              'It Staff',
-              <span>
-                IT Staff Productivity Benefits and Infrastructure cost
-                reductions will also present some nice savings, around{' '}
-                <em>
-                  $
-                  {pipe(
-                    itStaffProductivityBenefits(years, employees),
-                    toCommaSeparated
-                  )}
-                </em>{' '}
-                for your company
-              </span>,
-              // @ts-ignore
-              <Icon icon="carbon:person" />,
-            ],
-            [
-              'Mitigated Risks',
-              <span>
-                Lastly, mitigated risks and employee productivity benefits are
-                expected to generate savings of{' '}
-                <em>
-                  ${pipe(riskMitigation(years, employees), toCommaSeparated)}
-                </em>{' '}
-                a year in a company of your size
-              </span>,
-              // @ts-ignore
-              <Icon icon="bi:clipboard-check" />,
-            ],
-            // @ts-ignore
-          ].map(([key, element, icon]: [string, ReactNode, ReactNode]) => (
-            <Benefit key={key}>
-              {icon}
-              {element}
-            </Benefit>
-          ))}
+          <Benefit>
+            <BiCog />
+            <span>
+              In just {years} {years === 1 ? 'year' : 'years'} of using Knoa UEM
+              you will see{' '}
+              <em>
+                $
+                {pipe(productivityBenefits(years, employees), toCommaSeparated)}
+              </em>{' '}
+              in business productivity gains
+            </span>
+            ,
+          </Benefit>
+          <Benefit>
+            <BiUser />
+            <span>
+              IT Staff Productivity Benefits and Infrastructure cost reductions
+              will also present some nice savings, around{' '}
+              <em>
+                $
+                {pipe(
+                  itStaffProductivityBenefits(years, employees),
+                  toCommaSeparated
+                )}
+              </em>{' '}
+              for your company
+            </span>
+          </Benefit>
+          <Benefit>
+            <HiOutlineClipboardCheck />
+            <span>
+              Lastly, mitigated risks and employee productivity benefits are
+              expected to generate savings of{' '}
+              <em>
+                ${pipe(riskMitigation(years, employees), toCommaSeparated)}
+              </em>{' '}
+              a year in a company of your size
+            </span>
+          </Benefit>
         </BenefitList>
         <BenefitHelperText>
           Metrics based on assumptions from the IDC ROI model
