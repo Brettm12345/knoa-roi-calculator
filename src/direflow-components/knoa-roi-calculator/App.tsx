@@ -11,6 +11,7 @@ import {
   Input,
   MainHero,
   MainHeroSecondaryWrapper,
+  MainHeroWithArrow,
   MainTitle,
   MoneySaved,
   MoneySavedSecondaryText,
@@ -36,7 +37,7 @@ const App: FC = () => {
   const [years, setYears] = useNumber(3)
   return (
     <Body>
-      <MainHero>
+      <MainHeroWithArrow>
         <MainTitle>Knoa ROI Calculator</MainTitle>
         <SecondaryTitle>
           Input the number of employees to calculate the business impact Knoa
@@ -62,7 +63,7 @@ const App: FC = () => {
             <MoneySavedSecondaryText>In year one</MoneySavedSecondaryText>
           </MoneySavedWrapper>
         </MainHeroSecondaryWrapper>
-      </MainHero>
+      </MainHeroWithArrow>
       <YearsHero>
         <MoneySavedSecondaryText>or</MoneySavedSecondaryText>
         <MoneySaved>
@@ -77,12 +78,12 @@ const App: FC = () => {
         />
         <MoneySavedSecondaryText>Years</MoneySavedSecondaryText>
       </YearsHero>
-      <MainHero>
+      <MainHeroWithArrow>
         <MainTitle>Annual Business Benefits</MainTitle>
         <SecondaryTitle>
           (per {employees} {employees === 1 ? 'employee' : 'employees'})
         </SecondaryTitle>
-      </MainHero>
+      </MainHeroWithArrow>
       <BenefitSection>
         <BenefitList>
           <Benefit>

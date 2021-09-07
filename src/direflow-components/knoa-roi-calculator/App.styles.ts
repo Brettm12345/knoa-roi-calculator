@@ -18,6 +18,7 @@ export const Body = styled.div`
 export const MainHero = styled.section`
   background-color: ${red};
   color: white;
+  position: relative;
   display: flex;
   padding-top: 28px;
   padding-bottom: 28px;
@@ -27,6 +28,33 @@ export const MainHero = styled.section`
   align-items: center;
 `
 
+export const MainHeroWithArrow = styled(MainHero)`
+  border: 4px solid ${red};
+  &:after,
+  &:before {
+    z-index: 99;
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  &:after {
+    border-color: transparent;
+    border-top-color: ${red};
+    border-width: 30px;
+    margin-left: -30px;
+  }
+  &:before {
+    border-color: transparent;
+    border-top-color: ${red};
+    border-width: 36px;
+    margin-left: -36px;
+  }
+`
 const title = css`
   font-size: ${pxToRem(60)};
   font-weight: bold;
@@ -34,14 +62,6 @@ const title = css`
   @media ${device.tablet} {
     line-height: 100px;
     font-size: ${pxToRem(80)};
-  }
-  @media ${device.laptop} {
-    line-height: 120px;
-    font-size: ${pxToRem(98)};
-  }
-  @media ${device.desktop} {
-    line-height: 140px;
-    font-size: ${pxToRem(118)};
   }
 `
 
@@ -57,19 +77,11 @@ const highlight = css`
     line-height: 120px;
     font-size: ${pxToRem(100)};
   }
-  @media ${device.laptop} {
-    line-height: 100px;
-    font-size: ${pxToRem(110)};
-  }
-  @media ${device.desktop} {
-    line-height: 140px;
-    font-size: ${pxToRem(120)};
-  }
 `
-export const MainTitle = styled.h1`
+export const MainTitle = styled.h1<{margin?: boolean}>`
   ${title}
-  margin-bottom: 35px;
-  margin-top: 30px;
+  margin-bottom: ${props => (props.margin ? '20px' : '0px')};
+  margin-top: ${props => (props.margin ? '15px' : '0px')};
 `
 
 export const SecondaryTitle = styled.h2`
@@ -85,10 +97,6 @@ export const SecondaryTitle = styled.h2`
     padding-left: 4px;
     line-height: 60px;
   }
-  @media ${device.desktop} {
-    font-size: ${pxToRem(53)};
-    line-height: 70px;
-  }
   font-weight: normal;
   color: ${offWhite};
 `
@@ -98,6 +106,7 @@ export const AnnualBenefits = styled.h4`
   font-weight: 900;
 `
 export const YearsHero = styled.section`
+  position: relative;
   background-color: ${gray};
   display: flex;
   color: ${textDark};
@@ -108,6 +117,31 @@ export const YearsHero = styled.section`
   & > * {
     margin-right: 0px;
     margin-bottom: 10px;
+  }
+  border: 4px solid ${red};
+  &:after,
+  &:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    z-index: 99;
+  }
+  &:after {
+    border-color: transparent;
+    border-top-color: ${gray};
+    border-width: 30px;
+    margin-left: -30px;
+  }
+  &:before {
+    border-color: transparent;
+    border-top-color: ${gray};
+    border-width: 36px;
+    margin-left: -36px;
   }
   @media ${device.tablet} {
     & > * {
@@ -192,9 +226,6 @@ export const Benefit = styled.li`
     font-size: ${pxToRem(30)};
   }
   @media ${device.tablet} {
-    font-size: ${pxToRem(35)};
-  }
-  @media ${device.laptop} {
     font-size: ${pxToRem(40)};
   }
   &:not(:last-of-type) {
@@ -240,7 +271,6 @@ export const Button = styled.a`
     padding-right: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: ${pxToRem(50)};
   }
 `
 
@@ -269,9 +299,6 @@ export const BenefitSection = styled.section`
 export const MoneySavedSecondaryText = styled.span`
   font-weight: normal;
   font-size: ${pxToRem(40)};
-  @media ${device.desktop} {
-    font-size: ${pxToRem(50)};
-  }
 `
 
 export const Input = styled.input<{width: number; color: string}>`
