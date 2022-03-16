@@ -33,7 +33,7 @@ import {
 } from './util'
 
 const App: FC = () => {
-  const [employees, setEmployees] = useNumber(1000)
+  const [employees, setEmployees] = useNumber(5000)
   const [years, setYears] = useNumber(3)
   return (
     <Body>

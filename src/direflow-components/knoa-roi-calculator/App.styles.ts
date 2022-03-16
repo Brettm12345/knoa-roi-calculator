@@ -13,6 +13,7 @@ export const Body = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 100vw;
+  min-width: 100vw;
 `
 
 export const MainHero = styled.section`
@@ -56,26 +57,27 @@ export const MainHeroWithArrow = styled(MainHero)`
   }
 `
 const title = css`
-  font-size: ${pxToRem(60)};
+  font-size: ${pxToRem(30)};
   font-weight: bold;
-  line-height: 80px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
   @media ${device.tablet} {
-    line-height: 100px;
-    font-size: ${pxToRem(80)};
+    line-height: 80px;
+    font-size: ${pxToRem(50)};
   }
 `
 
 const highlight = css`
-  font-size: ${pxToRem(80)};
-  line-height: 100px;
+  font-size: ${pxToRem(40)};
+  line-height: 30px;
   font-weight: bold;
   @media ${device.mobileL} {
-    line-height: 110px;
-    font-size: ${pxToRem(90)};
+    line-height: 40px;
+    font-size: ${pxToRem(50)};
   }
   @media ${device.tablet} {
-    line-height: 120px;
-    font-size: ${pxToRem(100)};
+    line-height: 1.1;
+    font-size: ${pxToRem(60)};
   }
 `
 export const MainTitle = styled.h1<{margin?: boolean}>`
@@ -85,17 +87,17 @@ export const MainTitle = styled.h1<{margin?: boolean}>`
 `
 
 export const SecondaryTitle = styled.h2`
-  max-width: 95%;
-  font-size: ${pxToRem(30)};
-  line-height: 50px;
+  max-width: 60ch;
+  font-size: ${pxToRem(15)};
+  line-height: 30px;
+  letter-spacing: 0.02em;
   margin-top: 4px;
   @media ${device.laptop} {
-    font-size: ${pxToRem(40)};
+    font-size: ${pxToRem(20)};
     margin-right: 8px;
-    max-width: 50%;
     padding-right: 4px;
     padding-left: 4px;
-    line-height: 60px;
+    line-height: 30px;
   }
   font-weight: normal;
   color: ${offWhite};
@@ -114,10 +116,7 @@ export const YearsHero = styled.section`
   flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
-  & > * {
-    margin-right: 0px;
-    margin-bottom: 10px;
-  }
+  gap: 8px;
   border: 4px solid ${red};
   &:after,
   &:before {
@@ -144,9 +143,7 @@ export const YearsHero = styled.section`
     margin-left: -36px;
   }
   @media ${device.tablet} {
-    & > * {
-      margin-right: 30px;
-    }
+    gap: 16px;
     flex-direction: row;
   }
   justify-content: center;
@@ -177,7 +174,8 @@ export const MoneySaved = styled.span`
   ${highlight}
   max-width: 100%;
   margin-bottom: 0px;
-  margin-top: 30px;
+  margin-top: 10px;
+  line-height: 20px;
   @media ${device.laptop} {
     max-width: 50%;
     margin-top: 0px;
@@ -188,15 +186,16 @@ export const MoneySaved = styled.span`
 export const Bar = styled.div`
   background: linear-gradient(to right, ${yellow} 40%, white 60%);
   height: 14px;
-  width: 80%;
-  margin-top: 24px;
-  margin-bottom: 60px;
+  width: 40vw;
+  margin-top: 8px;
+  margin-bottom: 16px;
 `
 export const Benefit = styled.li`
   display: flex;
   flex-direction: row;
   & img {
-    min-width: 150px;
+    min-width: 80px;
+    max-width: 80px;
     height: auto;
     display: none;
     margin-top: auto;
@@ -212,21 +211,26 @@ export const Benefit = styled.li`
   padding-top: 16px;
   padding-bottom: 48px;
   margin-bottom: 16px;
-  margin-top: 16px;
+  margin-top: 10px;
   max-width: 90%;
+  font-weight: 500;
   color: ${textDark};
-  font-size: ${pxToRem(24)};
+  font-size: ${pxToRem(18)};
   line-height: 1.5em;
+  & span {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
   @media ${device.mobileL} {
     & img {
       display: block;
     }
   }
   @media ${device.mobileL} {
-    font-size: ${pxToRem(30)};
+    font-size: ${pxToRem(20)};
   }
   @media ${device.tablet} {
-    font-size: ${pxToRem(40)};
+    font-size: ${pxToRem(30)};
   }
   &:not(:last-of-type) {
     border-bottom: 3px dashed ${red};
@@ -247,15 +251,16 @@ export const Button = styled.a`
   background-color: ${yellow};
   color: white;
   text-decoration: none;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-size: ${pxToRem(30)};
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  line-height: 1.2;
+  padding-bottom: 16px;
+  font-size: ${pxToRem(16)};
   font-weight: bold;
   outline: none;
   border: none;
-  border-radius: 30px;
+  border-radius: 14px;
   -webkit-appearance: none;
   -moz-appearance: none;
   transition: transform, background-color, ease, 0.3s;
@@ -264,13 +269,7 @@ export const Button = styled.a`
     transform: translateY(-3px);
   }
   @media ${device.mobileL} {
-    font-size: ${pxToRem(40)};
-  }
-  @media ${device.laptopL} {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: ${pxToRem(24)};
   }
 `
 
@@ -308,10 +307,14 @@ export const Input = styled.input<{width: number; color: string}>`
   background-color: transparent;
   width: ${props => props.width}ch;
   border-top: none;
+  line-height: 60px;
   border-left: none;
   border-right: none;
   color: ${props => props.color};
   outline: none;
   border-bottom: 3px solid ${yellow};
   ${title}
+  @media ${device.tablet} {
+    line-height: 50px;
+  }
 `
